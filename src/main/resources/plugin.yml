@@ -1,0 +1,22 @@
+name: pEssenciais
+version: ${project.version}
+main: br.pryz.essentials.main.EssentialsMain
+api-version: 1.17
+authors: [Pryz]
+description: Plugin com funcoes essenciais.
+commands:
+  voar:
+    description: Altera seu modo voo.
+    aliases: [fly]
+  furtividade:
+    description: Lhe esconde de jogadores.
+    aliases: [vanish, v]
+  trocarapida:
+    description: Faz uma troca rapida entre seu modo de furtividade.
+    aliases: [tr, fastswitch]
+  construir:
+    description: Sub-Comando que altera a permissao para construir durante a furtividade.
+    aliases: [build]
+  falar:
+    description: Sub-Comando que altera a permissao para falar durante a furtividade.
+    aliases: [speak]

@@ -1,0 +1,19 @@
+NOT_A_PLAYER: "&cSomente jogadores podem utilizar esse comando."
+WRONG_USAGE: "&cVocê não tem permissão para utilizar este comando!"
+MISSING_PERMISSIONS: "&cO modo de uso desse comando está incorreto!"
+NOT_VANISHED: "&cVocê &lnão &cestá no modo de furtividade."
+NOW_CAN_BREAK: "&aAgora, você está livre para construir com o modo furtividade habilitado."
+NOW_CANT_BREAK: "&CAgora, você está proibido de construir com o modo furtividade habilitado."
+NOW_CAN_SPEAK: "&aAgora, você está livre para falar com o modo furtividade habilitado."
+NOW_CANT_SPEAK: "&cAgora, você está proibido de falar com o modo furtividade habilitado."
+CANT_SPEAK: "&cVocê está proibido de falar com o modo furtividade habilitado, utilize &f/&afalar&c."
+CANT_BUILD: "&cVocê está proibido de construir com o modo furtividade habilitado, utilize &f/&aconstruir&c."
+CANT_DROP: "&cPor motivos de segurança você está proibido de dropar itens com o modo furtividade habilitado."
+CANT_GIVE:  "&cPor motivos de segurança você está proibido de pegar itens com o modo furtividade habilitado, se prosseguir tentando, suas ações seram reportadas pelo sistema."
+CANT_PICK: "&cPor motivos de segurança você está proibido de pegar itens do chão com o modo furtividade habilitado."
+
+
+
+
+
+
