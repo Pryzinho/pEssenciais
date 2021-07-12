@@ -1,4 +1,4 @@
-package br.pryz.essentials.commands;
+package br.pryz.essentials.commands.moderation;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

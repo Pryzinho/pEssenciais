@@ -1,5 +1,6 @@
-package br.pryz.essentials.commands;
+package br.pryz.essentials.commands.moderation;
 
+import br.pryz.essentials.events.PlayerEvent;
 import br.pryz.essentials.main.EssentialsMain;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -32,6 +33,8 @@ public class Vanish implements CommandExecutor {
         if (!invanish.contains(p)) {
             invanish.add(p);
             gamemodes.put(p, p.getGameMode());
+            PlayerEvent.chat.put(p, false);
+            PlayerEvent.build.put(p, false);
             p.setGameMode(GameMode.CREATIVE);
             Bukkit.getOnlinePlayers().stream()
                     .filter(p1 -> !p1.hasPermission("pry.essentials.command.vanish"))

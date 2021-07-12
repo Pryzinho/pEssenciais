@@ -1,6 +1,6 @@
-package br.pryz.essentials.commands.subcommands;
+package br.pryz.essentials.commands.moderation.subcommands;
 
-import br.pryz.essentials.commands.Vanish;
+import br.pryz.essentials.commands.moderation.Vanish;
 import br.pryz.essentials.events.PlayerEvent;
 import br.pryz.essentials.utils.MessageType;
 import br.pryz.essentials.utils.Messages;

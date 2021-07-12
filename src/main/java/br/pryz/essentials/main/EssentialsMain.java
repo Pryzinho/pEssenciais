@@ -1,10 +1,14 @@
 package br.pryz.essentials.main;
 
-import br.pryz.essentials.commands.Fly;
-import br.pryz.essentials.commands.Vanish;
-import br.pryz.essentials.commands.VanishFastSwitch;
-import br.pryz.essentials.commands.subcommands.Build;
-import br.pryz.essentials.commands.subcommands.Speak;
+import br.pryz.essentials.commands.utilites.Fly;
+import br.pryz.essentials.commands.moderation.Vanish;
+import br.pryz.essentials.commands.moderation.VanishFastSwitch;
+import br.pryz.essentials.commands.moderation.subcommands.Build;
+import br.pryz.essentials.commands.moderation.subcommands.Speak;
+import br.pryz.essentials.commands.utilites.Food;
+import br.pryz.essentials.commands.utilites.Glow;
+import br.pryz.essentials.commands.utilites.Heal;
+import br.pryz.essentials.events.PlayerEvent;
 import br.pryz.essentials.utils.Messages;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -19,6 +23,9 @@ public final class EssentialsMain extends JavaPlugin {
     public void onEnable() {
         //Init Messages.yml...
         Messages.getConfig().saveConfig();
+
+        //Init Events
+        getServer().getPluginManager().registerEvents(new PlayerEvent(), this);
         //Moderation commands
         getCommand("furtividade").setExecutor(new Vanish()); //Vanish
         getCommand("construir").setExecutor(new Build()); //Build
@@ -27,6 +34,9 @@ public final class EssentialsMain extends JavaPlugin {
 
         //Utilities Command
         getCommand("voar").setExecutor(new Fly()); //Fly
+        getCommand("brilhar").setExecutor(new Glow()); //Glow
+        getCommand("regenerar").setExecutor(new Heal()); //Heal
+        getCommand("comer").setExecutor(new Food()); //Food
 
         //Complete init
         console.sendMessage(color("&f[&lp&4Essenciais&f] &aPlugin habilitado&f!"));

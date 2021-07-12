@@ -1,4 +1,4 @@
-package br.pryz.essentials.commands;
+package br.pryz.essentials.commands.utilites;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;

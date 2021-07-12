@@ -8,6 +8,15 @@ commands:
   voar:
     description: Altera seu modo voo.
     aliases: [fly]
+  brilhar:
+    description: Altera o seu brilho.
+    aliases: [glow]
+  regenerar:
+    description: Regenera a vida.
+    aliases: [heal, curar]
+  comer:
+    description: Regenera a saciedade.
+    aliases: [food]
   furtividade:
     description: Lhe esconde de jogadores.
     aliases: [vanish, v]

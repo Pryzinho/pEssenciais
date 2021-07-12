@@ -1,6 +1,6 @@
 package br.pryz.essentials.events;
 
-import br.pryz.essentials.commands.Vanish;
+import br.pryz.essentials.commands.moderation.Vanish;
 import br.pryz.essentials.main.EssentialsMain;
 import br.pryz.essentials.utils.MessageType;
 import br.pryz.essentials.utils.Messages;

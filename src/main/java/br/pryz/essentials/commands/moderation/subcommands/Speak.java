@@ -1,6 +1,6 @@
-package br.pryz.essentials.commands.subcommands;
+package br.pryz.essentials.commands.moderation.subcommands;
 
-import br.pryz.essentials.commands.Vanish;
+import br.pryz.essentials.commands.moderation.Vanish;
 import br.pryz.essentials.events.PlayerEvent;
 import br.pryz.essentials.utils.MessageType;
 import br.pryz.essentials.utils.Messages;
@@ -33,7 +33,7 @@ public class Speak implements CommandExecutor {
 		}
 			 if (!PlayerEvent.chat.get(p)) {
 				 PlayerEvent.chat.replace(p, true);
-					p.sendMessage(Messages.getString(MessageType.NOW_CAN_SPEAK));
+				 p.sendMessage(Messages.getString(MessageType.NOW_CAN_SPEAK));
 				} else {
 					PlayerEvent.chat.replace(p, PlayerEvent.chat.get(p), false);
 					p.sendMessage(Messages.getString(MessageType.NOW_CANT_SPEAK));
